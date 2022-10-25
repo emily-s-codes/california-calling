@@ -121,7 +121,7 @@ main {
     }
 
     .white_bg {
-        padding: 0 50px;
+        padding: 0;
         color: black;
 
         section {
@@ -129,37 +129,73 @@ main {
             flex-direction: column;
             align-items: center;
             padding: 100px 0;
-            width: 400px;
-            margin: 0 auto;
+            position: relative;
+            margin: 0;
 
-            article {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 50px;
+            // article {
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //     justify-content: center;
+            //     gap: 50px;
 
-            }
+            // }
 
             &:nth-of-type(2) {
 
                 p {
-                    padding: 100px 0;
+                    padding: 200px 0 100px 0;
                 }
             }
 
             img {
                 width: 170px;
+                position: absolute;
+            }
+
+            .img1 {
+                top: -10%;
+                left: 60%;
+            }
+
+            .img2 {
+                top: 20%;
+                left: 2%;
+            }
+
+            .img3 {
+                top: 70%;
+                right: 0;
+            }
+
+            .img4 {
+                top: 0;
+                left: 20%;
+            }
+
+            .img5 {
+                top: 15%;
+                left: 60%;
+            }
+
+            .img6 {
+                top: 40%;
+                left: 0;
+            }
+
+            .img7 {
+                bottom: -10%;
+                left: 50%;
             }
 
             h2 {
                 padding: 100px 0 0 0;
                 line-height: 5rem;
+            }
 
-                p {
-                    padding: 0;
-                    width: 320px;
-                    line-height: 2rem;
-                }
+            p {
+                padding: 0;
+                width: 320px;
+                line-height: 2rem;
             }
         }
     }
@@ -169,20 +205,34 @@ main {
         color: white;
 
         section {
-            padding: 200px 50px;
-            display: flex;
-            align-items: center;
+            padding: 200px 50px 100px 50px;
+
+            &:nth-of-type(1) {
+                display: flex;
+                align-items: center;
+            }
 
             &:nth-of-type(2) {
-                padding: 0 50px;
+                padding: 0;
+                position: relative;
+                height: 500px;
             }
 
             .lg_img {
+                position: absolute;
                 width: 60%;
+                left: 10%;
+                bottom: -10%;
+                z-index: 1;
             }
 
             .sm_img {
+                position: absolute;
                 width: 30%;
+                right: 10%;
+                bottom: 0;
+                z-index: 2;
+
             }
 
             article {
@@ -205,6 +255,80 @@ main {
         background-color: white;
         color: black;
         padding-bottom: 100px;
+        position: relative;
+        overflow-x: hidden;
+
+        .stamp_img {
+            position: absolute;
+            right: -8%;
+            top: -8%;
+            animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotate {
+            10% {
+                transform: rotateZ(36deg);
+            }
+
+            20% {
+                transform: rotateZ(72deg);
+            }
+
+            30% {
+                transform: rotateZ(108deg);
+            }
+
+            40% {
+                transform: rotateZ(144deg);
+            }
+
+            50% {
+                transform: rotateZ(180deg);
+            }
+
+            60% {
+                transform: rotateZ(216deg);
+            }
+
+            70% {
+                transform: rotateZ(252deg);
+            }
+
+            80% {
+                transform: rotateZ(288deg);
+            }
+
+            90% {
+                transform: rotateZ(324deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        section:nth-of-type(2) {
+            height: 550px;
+            position: relative;
+
+            .sm_img {
+                position: absolute;
+                width: 30%;
+                left: 10%;
+                bottom: 20%;
+
+            }
+
+            .lg_img {
+                position: absolute;
+                width: 60%;
+                bottom: 0;
+                left: 30%;
+            }
+        }
 
         .stamp_img {
             width: 300px;
@@ -217,6 +341,45 @@ footer {
     color: white;
     padding: 100px 50px;
     display: flex;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        background-color: white;
+        color: black;
+        @include lg-text();
+        padding: 0;
+        position: absolute;
+        bottom: 80%;
+        right: -70%;
+        white-space: nowrap;
+        animation-name: marquee;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 5000ms;
+        animation-timing-function: linear;
+
+        span {
+            @include lg-text();
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(-220px) translateY(-220px) rotateZ(45deg);
+
+        }
+
+        // 50% {
+        //     transform: translateX(50px) translateY(50px) rotateZ(45deg);}
+
+        100% {
+            transform: translateX(460px) translateY(460px) rotateZ(45deg);
+
+        }
+    }
 
     section {
         width: 50%;
@@ -252,9 +415,25 @@ footer {
         }
 
         &:nth-of-type(2) {
+            position: relative;
+            width: 50%;
+            padding: 100px 0;
+
             img {
+                position: absolute;
                 width: 100px;
+                bottom: 0;
+
+                &:nth-of-type(1) {
+                    right: 35%
+                }
+
+                &:nth-of-type(2) {
+                    right: 10%
+                }
             }
+
+
         }
     }
 }
