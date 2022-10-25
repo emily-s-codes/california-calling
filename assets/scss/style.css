@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("../fonts/Lora-Regular.ttf");
+}
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Lora-Bold";
+  src: url("../fonts/Lora-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  font-size: 8rem;
+  font-family: "Lora-Bold", serif;
+  padding: 30px 0;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-family: "Lora-Regular", serif;
+  padding: 25px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "WorkSans-Regular", sans-serif;
+  padding: 20px 0;
+}
+
+header {
+  background-color: #000;
+  padding: 0 50px 100px 50px;
+}
+header img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 40px;
+}
+header section {
+  display: flex;
+  color: white;
+}
+header section h1 {
+  text-align: center;
+  line-height: 5rem;
+}
+header section h1 span {
+  font-size: 8rem;
+  font-family: "Lora-Bold", serif;
+  padding: 30px 0;
+  color: black;
+  -webkit-text-stroke: 0.5px white;
+}
+header section:nth-of-type(1) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+header section:nth-of-type(2) img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0px;
+}
+header section:nth-of-type(2) a {
+  font-size: 1.2rem;
+  font-family: "WorkSans-Regular", sans-serif;
+  padding: 20px 0;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+header section:nth-of-type(2) a:hover {
+  background-color: white;
+  color: black;
+}
+
+main .black_bg {
+  background-color: black;
+  padding: 0 50px;
+  color: white;
+}
+main .black_bg section {
+  display: flex;
+  justify-content: space-between;
+}
+main .black_bg section article div {
+  margin: 50px 0;
+}
+main .black_bg section article div h3 {
+  font-size: 1.2rem;
+  font-family: "WorkSans-Regular", sans-serif;
+  padding: 20px 0;
+  padding: 0;
+}
+main .black_bg section article div p {
+  font-size: 4rem;
+  font-family: "Lora-Regular", serif;
+  padding: 0;
+}
+main .black_bg section img {
+  width: 40%;
+}
+main .white_bg {
+  padding: 0;
+  color: black;
+}
+main .white_bg section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+  margin: 0;
+}
+main .white_bg section:nth-of-type(2) p {
+  padding: 200px 0 100px 0;
+}
+main .white_bg section img {
+  width: 170px;
+  position: absolute;
+}
+main .white_bg section .img1 {
+  top: -10%;
+  left: 60%;
+}
+main .white_bg section .img2 {
+  top: 20%;
+  left: 2%;
+}
+main .white_bg section .img3 {
+  top: 70%;
+  right: 0;
+}
+main .white_bg section .img4 {
+  top: 0;
+  left: 20%;
+}
+main .white_bg section .img5 {
+  top: 15%;
+  left: 60%;
+}
+main .white_bg section .img6 {
+  top: 40%;
+  left: 0;
+}
+main .white_bg section .img7 {
+  bottom: -10%;
+  left: 50%;
+}
+main .white_bg section h2 {
+  padding: 100px 0 0 0;
+  line-height: 5rem;
+}
+main .white_bg section p {
+  padding: 0;
+  width: 320px;
+  line-height: 2rem;
+}
+main .black_bg_2, main .white_bg_2 {
+  background-color: black;
+  color: white;
+}
+main .black_bg_2 section, main .white_bg_2 section {
+  padding: 200px 50px 100px 50px;
+}
+main .black_bg_2 section:nth-of-type(1), main .white_bg_2 section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+main .black_bg_2 section:nth-of-type(2), main .white_bg_2 section:nth-of-type(2) {
+  padding: 0;
+  position: relative;
+  height: 500px;
+}
+main .black_bg_2 section .lg_img, main .white_bg_2 section .lg_img {
+  position: absolute;
+  width: 60%;
+  left: 10%;
+  bottom: -10%;
+  z-index: 1;
+}
+main .black_bg_2 section .sm_img, main .white_bg_2 section .sm_img {
+  position: absolute;
+  width: 30%;
+  right: 10%;
+  bottom: 0;
+  z-index: 2;
+}
+main .black_bg_2 section article, main .white_bg_2 section article {
+  width: 50%;
+}
+main .black_bg_2 section article h2, main .white_bg_2 section article h2 {
+  line-height: 5rem;
+}
+main .black_bg_2 section article:nth-of-type(2) p:nth-of-type(1), main .white_bg_2 section article:nth-of-type(2) p:nth-of-type(1) {
+  font-size: 2.4rem;
+  font-family: "Lora-Regular", serif;
+  padding: 25px 0;
+  line-height: 2.5rem;
+}
+main .white_bg_2 {
+  background-color: white;
+  color: black;
+  padding-bottom: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+main .white_bg_2 .stamp_img {
+  position: absolute;
+  right: -8%;
+  top: -8%;
+  animation-name: rotate;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  10% {
+    transform: rotateZ(36deg);
+  }
+  20% {
+    transform: rotateZ(72deg);
+  }
+  30% {
+    transform: rotateZ(108deg);
+  }
+  40% {
+    transform: rotateZ(144deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  60% {
+    transform: rotateZ(216deg);
+  }
+  70% {
+    transform: rotateZ(252deg);
+  }
+  80% {
+    transform: rotateZ(288deg);
+  }
+  90% {
+    transform: rotateZ(324deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+main .white_bg_2 section:nth-of-type(2) {
+  height: 550px;
+  position: relative;
+}
+main .white_bg_2 section:nth-of-type(2) .sm_img {
+  position: absolute;
+  width: 30%;
+  left: 10%;
+  bottom: 20%;
+}
+main .white_bg_2 section:nth-of-type(2) .lg_img {
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  left: 30%;
+}
+main .white_bg_2 .stamp_img {
+  width: 300px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 100px 50px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+footer h2 {
+  background-color: white;
+  color: black;
+  font-size: 8rem;
+  font-family: "Lora-Bold", serif;
+  padding: 30px 0;
+  padding: 0;
+  position: absolute;
+  bottom: 80%;
+  right: -70%;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+}
+footer h2 span {
+  font-size: 8rem;
+  font-family: "Lora-Bold", serif;
+  padding: 30px 0;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(-220px) translateY(-220px) rotateZ(45deg);
+  }
+  100% {
+    transform: translateX(460px) translateY(460px) rotateZ(45deg);
+  }
+}
+footer section {
+  width: 50%;
+  padding: 0 70px;
+}
+footer section p:nth-of-type(2) {
+  font-size: 2.4rem;
+  font-family: "Lora-Regular", serif;
+  padding: 25px 0;
+  line-height: 2.5rem;
+}
+footer section p:nth-of-type(3) {
+  padding: 10px 0 20px 0;
+}
+footer section p:nth-of-type(4) {
+  padding: 0;
+}
+footer section a {
+  font-size: 1.2rem;
+  font-family: "WorkSans-Regular", sans-serif;
+  padding: 20px 0;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+footer section a:hover {
+  background-color: white;
+  color: black;
+}
+footer section div {
+  margin-top: 80px;
+}
+footer section div img {
+  width: 20px;
+}
+footer section div img:nth-of-type(2) {
+  margin: -1.5px 8px;
+}
+footer section:nth-of-type(2) {
+  position: relative;
+  width: 50%;
+  padding: 100px 0;
+}
+footer section:nth-of-type(2) img {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+}
+footer section:nth-of-type(2) img:nth-of-type(1) {
+  right: 35%;
+}
+footer section:nth-of-type(2) img:nth-of-type(2) {
+  right: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
