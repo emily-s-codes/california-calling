@@ -595,10 +595,22 @@ footer {
                 }
 
                 &:nth-of-type(2) {
-                    height: 400px;
+                    display: flex;
+                    position: static;
+                    gap: 10px;
+                    height: auto;
+                    padding-bottom: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    .lg_img {
+                        position: static;
+                        width: 80%;
+                        height: auto;
+                    }
 
                     .sm_img {
-                        bottom: 55%;
+                        display: none;
                     }
                 }
             }
@@ -613,9 +625,8 @@ footer {
             section {
                 padding: 100px 50px 100px 50px;
 
-                &:nth-of-type(2) {
-                    height: 600px;
-                }
+
+
             }
         }
     }
@@ -704,7 +715,7 @@ footer {
 }
 
 // FORMATTED up to 576px
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width:576px) {
     header {
         section {
             h1 {
@@ -798,23 +809,7 @@ footer {
                     }
                 }
 
-                &:nth-of-type(2) {
-                    display: flex;
-                    flex-direction: column;
-                    position: static;
-                    gap: 10px;
 
-                    .lg_img {
-                        position: static;
-                        width: 80%;
-                    }
-
-                    .sm_img {
-                        width: 50%;
-                        position: static;
-                        align-self: flex-end;
-                    }
-                }
             }
         }
 
