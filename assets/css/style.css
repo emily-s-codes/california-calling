@@ -421,6 +421,41 @@ footer section:nth-of-type(2) img:nth-of-type(2) {
   }
 }
 @media only screen and (max-width: 1199px) {
+  main .white_bg .img1 {
+    width: 300px;
+    top: -10%;
+    left: 60%;
+  }
+  main .white_bg .img2 {
+    width: 250px;
+    top: 30%;
+    left: 2%;
+  }
+  main .white_bg .img3 {
+    width: 250px;
+    top: 90%;
+    right: 0;
+  }
+  main .white_bg .img4 {
+    width: 300px;
+    top: 30%;
+    left: 20%;
+  }
+  main .white_bg .img5 {
+    width: 300px;
+    top: 40%;
+    left: 60%;
+  }
+  main .white_bg .img6 {
+    width: 250px;
+    top: 65%;
+    left: 0;
+  }
+  main .white_bg .img7 {
+    width: 300px;
+    bottom: -10%;
+    left: 60%;
+  }
   footer h2 {
     bottom: 90%;
     right: -170%;

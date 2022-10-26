@@ -482,6 +482,52 @@ footer {
 
 // FORMATTED 992-1200px
 @media only screen and (max-width:1199px) {
+    main {
+        .white_bg {
+            .img1 {
+                width: 300px;
+                top: -10%;
+                left: 60%;
+            }
+
+            .img2 {
+                width: 250px;
+                top: 30%;
+                left: 2%;
+            }
+
+            .img3 {
+                width: 250px;
+                top: 90%;
+                right: 0;
+            }
+
+            .img4 {
+                width: 300px;
+                top: 30%;
+                left: 20%;
+            }
+
+            .img5 {
+                width: 300px;
+                top: 40%;
+                left: 60%;
+            }
+
+            .img6 {
+                width: 250px;
+                top: 65%;
+                left: 0;
+            }
+
+            .img7 {
+                width: 300px;
+                bottom: -10%;
+                left: 60%;
+            }
+        }
+    }
+
     footer {
         h2 {
             bottom: 90%;
